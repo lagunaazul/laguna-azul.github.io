@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventuras Perú - Inicio</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Aventuras Perú</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reserva.html">Reserva</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonios.html">Testimonios</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Banner principal -->
+    <header class="banner text-center text-white d-flex align-items-center justify-content-center" style="background-image: url('images/banner.jpg'); height: 400px; background-size: cover; background-position: center;">
+        <h1 class="display-3 fw-bold" style="font-family: 'Georgia', serif;">Aventuras Perú</h1>
+    </header>
+
+    <!-- Sección de bienvenida -->
+    <section id="bienvenida" class="py-5">
+        <div class="container text-center">
+            <h2>Vive una experiencia inolvidable en Perú</h2>
+            <p>
+                Conoce la maravilla de la naturaleza, la historia y la cultura que solo Perú te puede ofrecer. 
+                ¡Explora paisajes impresionantes, descubre ruinas ancestrales y vive experiencias únicas que quedarán grabadas para siempre en tu memoria!
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe 
+                        width="100%" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/n8mXPqdA_b0?autoplay=1&mute=1&loop=1&playlist=n8mXPqdA_b0" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="col-md-6">
+                    <h4>Paquete Perú al Completo</h4>
+                    <p><strong>15 días / 14 noches</strong></p>
+                    <p>
+                        Perú es uno de los pocos países a nivel mundial que tiene Costa, Sierra y Selva. Este paquete está diseñado para que el visitante pueda conocer más, 
+                        desde las antiguas ruinas de los Incas hasta las maravillas naturales que ofrece la Amazonía.
+                    </p>
+                    <button class="btn btn-primary">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   <!-- Principales destinos -->
+<section id="principales-destinos" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2>Principales destinos</h2>
+        <p>Descubre nuestros destinos auténticos para viajar a Perú este 2024</p>
+        <div class="row">
+            <!-- Cuadro 1 -->
+            <div class="col-md-3">
+                <div class="destino-card position-relative flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Cara frontal -->
+                        <div class="flip-card-front" style="background-image: url('images/1arequipa.jpg'); background-size: cover; height: 250px; display: flex; align-items: center; justify-content: center;">
+                            <h5 class="text-white bg-dark px-2 py-1">Arequipa</h5>
+                        </div>
+                        <!-- Cara trasera -->
+                        <div class="flip-card-back d-flex align-items-center justify-content-center flex-column bg-dark text-white" style="height: 250px;">
+                            <p>La ciudad blanca con volcanes y cañones impresionantes.</p>
+                            <a href="#" class="btn btn-light">Descubre más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cuadro 2 -->
+            <div class="col-md-3">
+                <div class="destino-card position-relative flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Cara frontal -->
+                        <div class="flip-card-front" style="background-image: url('images/cusco.jpg'); background-size: cover; height: 250px; display: flex; align-items: center; justify-content: center;">
+                            <h5 class="text-white bg-dark px-2 py-1">Cusco</h5>
+                        </div>
+                        <!-- Cara trasera -->
+                        <div class="flip-card-back d-flex align-items-center justify-content-center flex-column bg-dark text-white" style="height: 250px;">
+                            <p>Destino cargado de mística y cultura incaica.</p>
+                            <a href="#" class="btn btn-light">Descubre más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cuadro 3 -->
+            <div class="col-md-3">
+                <div class="destino-card position-relative flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Cara frontal -->
+                        <div class="flip-card-front" style="background-image: url('images/1iquitos.jpg'); background-size: cover; height: 250px; display: flex; align-items: center; justify-content: center;">
+                            <h5 class="text-white bg-dark px-2 py-1">Iquitos</h5>
+                        </div>
+                        <!-- Cara trasera -->
+                        <div class="flip-card-back d-flex align-items-center justify-content-center flex-column bg-dark text-white" style="height: 250px;">
+                            <p>Conéctate con la naturaleza y vida silvestre.</p>
+                            <a href="#" class="btn btn-light">Descubre más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cuadro 4 -->
+            <div class="col-md-3">
+                <div class="destino-card position-relative flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Cara frontal -->
+                        <div class="flip-card-front" style="background-image: url('images/1lima.jpg'); background-size: cover; height: 250px; display: flex; align-items: center; justify-content: center;">
+                            <h5 class="text-white bg-dark px-2 py-1">Lima</h5>
+                        </div>
+                        <!-- Cara trasera -->
+                        <div class="flip-card-back d-flex align-items-center justify-content-center flex-column bg-dark text-white" style="height: 250px;">
+                            <p>La capital gastronómica de América Latina.</p>
+                            <a href="#" class="btn btn-light">Descubre más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Paquetes destacados -->
+<section id="paquetes" class="py-5" style="background-color: #395470; color: white; margin-top: 250px;">
+    <div class="container text-center">
+        <h2 class="mb-4">Paquetes Destacados</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bg-transparent border-0">
+                    <img src="images/machu_picchu.jpg" class="card-img-top img-fluid rounded" alt="Machu Picchu">
+                    <div class="card-body">
+                        <h5 class="card-title">Machu Picchu</h5>
+                        <p class="card-text">Un destino mágico lleno de historia y cultura.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-transparent border-0">
+                    <img src="images/arequipa.jpg" class="card-img-top img-fluid rounded" alt="Arequipa">
+                    <div class="card-body">
+                        <h5 class="card-title">Arequipa</h5>
+                        <p class="card-text">Conoce la ciudad blanca, rodeada de volcanes y cañones.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-transparent border-0">
+                    <img src="images/valle_sagrado.jpg" class="card-img-top img-fluid rounded" alt="Valle Sagrado">
+                    <div class="card-body">
+                        <h5 class="card-title">Valle Sagrado</h5>
+                        <p class="card-text">Un lugar lleno de paisajes impresionantes y sitios arqueológicos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="opciones" class="py-5">
+    <div class="container text-center">
+        <h2>Explora más sobre Perú</h2>
+        <div class="row justify-content-center"> <!-- Centra los cuadros -->
+            <div class="col-md-3"> <!-- Aumenta el tamaño de los cuadros -->
+                <div class="card">
+                    <img src="images/viajes.jpg" class="card-img-top" alt="Viajes a Perú">
+                    <div class="card-body">
+                        <h5 class="card-title">Viajes a Perú</h5>
+                        <p class="card-text">Descubre todos los viajes disponibles para explorar Perú.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/guia.jpg" class="card-img-top" alt="Guía a Perú">
+                    <div class="card-body">
+                        <h5 class="card-title">Guía a Perú</h5>
+                        <p class="card-text">Toda la información necesaria para planificar tu viaje.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/opiniones.jpg" class="card-img-top" alt="Opiniones">
+                    <div class="card-body">
+                        <h5 class="card-title">Opiniones</h5>
+                        <p class="card-text">Lee las opiniones de quienes ya han visitado Perú. ¡Anímate!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/lugares.jpg" class="card-img-top" alt="Lugares">
+                    <div class="card-body">
+                        <h5 class="card-title">Lugares</h5>
+                        <p class="card-text">Conoce los destinos más importantes de Perú.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Información sobre lugares turísticos -->
+<section id="lugares" class="py-5">
+    <div class="container text-center">
+        <h2>Lugares Turísticos Destacados</h2>
+        <div id="carouselLugares" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/machu_picchu.jpg" class="d-block w-100" alt="Machu Picchu">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Machu Picchu</h5>
+                        <p>Machu Picchu es una antigua ciudadela inca descubierta por el norteamericano Hiram Bingham en 1911. Se encuentra en un entorno impresionante, rodeada de montañas que la han protegido durante siglos.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/arequipa.jpg" class="d-block w-100" alt="Arequipa">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Arequipa</h5>
+                        <p>Arequipa es conocida por su arquitectura de sillar blanco y sus impresionantes volcanes. Es una ciudad llena de historia, cultura y belleza natural.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/1cusco.jpg" class="d-block w-100" alt="Cusco">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Cusco</h5>
+                        <p>Cusco, la antigua capital del Imperio Inca, es un destino lleno de historia, cultura y arquitectura impresionante. Es el punto de partida para visitar Machu Picchu.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/1lago_titicaca.jpg" class="d-block w-100" alt="Lago Titicaca">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lago Titicaca</h5>
+                        <p>El Lago Titicaca, el lago navegable más alto del mundo, es hogar de comunidades indígenas que viven en islas flotantes hechas de totora.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/1lineas_nazca.jpg" class="d-block w-100" alt="Líneas de Nazca">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Líneas de Nazca</h5>
+                        <p>Las Líneas de Nazca son misteriosos geoglifos trazados en el desierto peruano, visibles solo desde el aire. Su origen y propósito siguen siendo un enigma.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/1selva_amazonica.jpg" class="d-block w-100" alt="Selva Amazónica">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Selva Amazónica</h5>
+                        <p>La Selva Amazónica peruana ofrece una biodiversidad única, con parques nacionales como Manu y Tambopata, ideales para el ecoturismo.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselLugares" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselLugares" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonios -->
+<section id="testimonios" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2>Testimonios</h2>
+        <p class="mb-4">Descubre las opiniones de nuestros viajeros que han disfrutado de nuestros viajes</p>
+        <div class="row">
+            <!-- Testimonio 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <blockquote class="blockquote">
+                            <p>"En todo momento su atención y recomendación en los itinerarios y excursiones fueron excelentes. ¡Recomiendo 100% viajar con Aventuras Perú!"</p>
+                        </blockquote>
+                        <footer class="blockquote-footer">Oscar Ruiz Perez</footer>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonio 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <blockquote class="blockquote">
+                            <p>"Muchas gracias a la agencia Incas Perú, he podido viajar a Perú desde España; Lima, Cuzco y Machu Picchu han sido increíbles!"</p>
+                        </blockquote>
+                        <footer class="blockquote-footer">Miguel Gómez Cotera, <cite title="Destino">Destino Machu Picchu</cite></footer>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonio 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <blockquote class="blockquote">
+                            <p>"Me encantó el servicio que me dieron, excelente calidad, super formales y 100% confiables. Definitivamente regreso."</p>
+                        </blockquote>
+                        <footer class="blockquote-footer">Maiella Torres, <cite title="Destino">Destino Perú</cite></footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- Pie de página -->
+<footer class="bg-dark text-white py-3">
+    <div class="container">
+        <div class="row">
+            <!-- Redes sociales -->
+            <div class="col-md-4">
+                <h5>Redes sociales</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#" class="text-white d-flex align-items-center">
+                            <img src="images/facebook.jpg" alt="Facebook" class="me-2" style="width: 24px; height: 24px;"> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white d-flex align-items-center">
+                            <img src="images/youtube.jpg" alt="YouTube" class="me-2" style="width: 24px; height: 24px;"> YouTube
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white d-flex align-items-center">
+                            <img src="images/instagram.jpg" alt="Instagram" class="me-2" style="width: 24px; height: 24px;"> Instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Quiénes somos -->
+            <div class="col-md-4">
+                <h5>Quiénes somos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Sostenibilidad</a></li>
+                    <li><a href="#" class="text-white">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Contacto -->
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">jr. lima </a></li>
+                    <li><a href="tel:+51965451526" class="text-white">+51 965451526</a></li>
+                    <li><a href="mailto:aventurasperu@.com" class="text-white">aventurasperu@reserva.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

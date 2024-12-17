@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventuras Perú - Nosotros</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .image-container {
+            max-width: 40%; /* Reducimos el tamaño de la imagen */
+            height: auto;
+            margin-right: 20px; /* Espacio entre la imagen y el texto */
+        }
+        .section-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Permite que el contenido se envuelva en pantallas pequeñas */
+        }
+        .text-content {
+            max-width: 55%; /* Aumentamos el espacio para el texto */
+            padding: 20px;
+        }
+        .text-content h3 {
+            color: #28a745;
+        }
+        .text-content p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            .section-content {
+                flex-direction: column;
+                text-align: center; /* Alineamos el texto al centro en pantallas pequeñas */
+            }
+            .image-container {
+                max-width: 80%; /* Aumentamos el tamaño de la imagen en pantallas pequeñas */
+                margin-bottom: 20px; /* Espacio debajo de la imagen */
+            }
+            .text-content {
+                max-width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Aventuras Perú</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reserva.html">Reserva</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Información sobre nosotros -->
+    <section id="nosotros" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre Nosotros</h2>
+            <div class="section-content">
+                <!-- Imagen a la izquierda -->
+                <div class="image-container">
+                    <img src="images/imagen.jpg" alt="Aventuras Perú" class="img-fluid">
+                </div>
+
+                <!-- Texto a la derecha -->
+                <div class="text-content">
+                    <h3>Bienvenidos a Aventuras Perú</h3>
+                    <p>
+                        Aventuras Perú es una agencia de viajes ubicada en Puno, Perú, especializada en ofrecer experiencias turísticas únicas. Nuestro equipo está compuesto por apasionados del turismo, comprometidos en brindar a nuestros clientes la oportunidad de explorar la increíble diversidad cultural, histórica y natural de nuestra región y el resto del país.
+                    </p>
+                    <p>
+                        En nuestra agencia, nos enfocamos en crear itinerarios personalizados que se adaptan a los intereses y necesidades de cada viajero. Desde explorar las maravillas naturales de la Amazonía, hasta sumergirse en la historia milenaria de Cusco o disfrutar de la serenidad del Lago Titicaca en Puno, tenemos opciones para todos los gustos.
+                    </p>
+                    <p>
+                        Nuestro objetivo es ofrecer un servicio de calidad, asegurando que cada experiencia sea memorable y auténtica. Nos enorgullece ser parte de la comunidad de Puno, y trabajamos de la mano con guías locales y proveedores para promover el turismo responsable y sostenible.
+                    </p>
+                    <p>
+                        Ya sea que busques una aventura llena de adrenalina o una experiencia cultural tranquila, en Aventuras Perú te ayudaremos a hacer realidad tus sueños de viaje.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="row">
+                <!-- Redes sociales -->
+                <div class="col-md-4">
+                    <h5>Redes sociales</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-white d-flex align-items-center">
+                                <img src="images/facebook.jpg" alt="Facebook" class="me-2" style="width: 24px; height: 24px;"> Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white d-flex align-items-center">
+                                <img src="images/youtube.jpg" alt="YouTube" class="me-2" style="width: 24px; height: 24px;"> YouTube
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white d-flex align-items-center">
+                                <img src="images/instagram.jpg" alt="Instagram" class="me-2" style="width: 24px; height: 24px;"> Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Quiénes somos -->
+                <div class="col-md-4">
+                    <h5>Quiénes somos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Sostenibilidad</a></li>
+                        <li><a href="#" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Contacto -->
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">jr. lima </a></li>
+                        <li><a href="tel:+51965451526" class="text-white">+51 965451526</a></li>
+                        <li><a href="mailto:aventurasperu@.com" class="text-white">aventurasperu@reserva.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes a Lima</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Aventuras Perú</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reserva.html">Reserva</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <!-- Banner del destino (Ejemplo Cusco) -->
+        <section class="banner" style="background-image: url('images/banner_cusco.jpg'); background-size: cover; background-position: center;">
+            <div class="container text-center text-white py-5">
+                <h1 class="display-3 font-weight-bold">Viajes a Cusco</h1>
+                <p class="lead">Cusco en 8 Días / 7 Noches</p>
+                <p class="lead">Circuito: Lima, Cusco, Valle Sagrado, Maras, Moray, Machu Picchu</p>
+                <p class="lead">Salidas diarias garantizadas</p>
+                <p class="lead">Precio: Desde <strong>S/.1200</strong> o <strong>S/.1500</strong></p>
+            </div>
+        </section>
+    
+        <!-- Descripción del destino -->
+        <section class="py-5">
+            <div class="container">
+                <h2>Descubre Cusco</h2>
+                <p>Cusco es un destino cargado de mística, considerado como la capital del Imperio Inca, lleno de historia, cultura y maravillas arqueológicas...</p>
+    
+                <!-- Cuadros de opciones -->
+                <div class="cuadro-verde" onclick="toggleContent('itinerario')">Itinerario</div>
+                <div id="itinerario" class="contenido-itinerario" style="display: none;">
+                    <p><strong>Día 1:</strong> Llegada a Lima y traslado al hotel.</p>
+                    <p><strong>Día 2:</strong> Descubriendo Lima (Desayuno y tour por la ciudad).</p>
+                    <p><strong>Día 3:</strong> Vuelo a Cusco, recorrido por la ciudad.</p>
+                    <p><strong>Día 4:</strong> Valle Sagrado, visita a Ollantaytambo.</p>
+                    <p><strong>Día 5:</strong> Maras y Moray, exploración de las terrazas.</p>
+                    <p><strong>Día 6:</strong> Excursión a Machu Picchu.</p>
+                    <p><strong>Día 7:</strong> Regreso a Cusco y tiempo libre.</p>
+                    <p><strong>Día 8:</strong> Regreso a Lima y fin del tour.</p>
+                </div>
+    
+                <div class="cuadro-verde" onclick="toggleContent('servicios-incluidos')">Servicios incluidos</div>
+                <div id="servicios-incluidos" class="contenido-itinerario" style="display: none;">
+                    <p>- Transporte terrestre y aéreo</p>
+                    <p>- Guía turístico bilingüe</p>
+                    <p>- Entradas a los principales sitios turísticos</p>
+                    <p>- Alojamiento en hoteles de 3 y 4 estrellas</p>
+                    <p>- Alimentación según itinerario</p>
+                </div>
+    
+                <div class="cuadro-verde" onclick="toggleContent('recomendaciones')">Recomendaciones</div>
+                <div id="recomendaciones" class="contenido-itinerario" style="display: none;">
+                    <p>- Llevar ropa cómoda y ligera</p>
+                    <p>- Protégerse del sol con bloqueador solar</p>
+                    <p>- Llevar zapatos cómodos para caminar</p>
+                    <p>- No olvides tu cámara fotográfica para capturar los hermosos paisajes</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Pie de página -->
+        <footer class="bg-dark text-white text-center py-3">
+            <div class="container">
+                <div class="row">
+                    <!-- Redes sociales -->
+                    <div class="col-md-4">
+                        <h5>Redes sociales</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white d-flex align-items-center"><img src="images/facebook.jpg" alt="Facebook" class="me-2" style="width: 24px; height: 24px;"> Facebook</a></li>
+                            <li><a href="#" class="text-white d-flex align-items-center"><img src="images/youtube.jpg" alt="YouTube" class="me-2" style="width: 24px; height: 24px;"> YouTube</a></li>
+                            <li><a href="#" class="text-white d-flex align-items-center"><img src="images/instagram.jpg" alt="Instagram" class="me-2" style="width: 24px; height: 24px;"> Instagram</a></li>
+                        </ul>
+                    </div>
+                    <!-- Quiénes somos -->
+                    <div class="col-md-4">
+                        <h5>Quiénes somos</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Sostenibilidad</a></li>
+                            <li><a href="#" class="text-white">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <!-- Contacto -->
+                    <div class="col-md-4">
+                        <h5>Contacto</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">jr. cusco</a></li>
+                            <li><a href="tel:+51965451526" class="text-white">+51 965451526</a></li>
+                            <li><a href="mailto:aventurasperu@reserva.com" class="text-white">aventurasperu@reserva.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p>&copy; 2024 Aventuras Perú. Todos los derechos reservados.</p>
+        </footer>
+    
+        <script>
+            function toggleContent(id) {
+                const content = document.getElementById(id);
+                if (content.style.display === "none" || content.style.display === "") {
+                    content.style.display = "block";
+                } else {
+                    content.style.display = "none";
+                }
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    

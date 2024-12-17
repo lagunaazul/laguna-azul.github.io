@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventuras Perú - Contacto</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Aventuras Perú</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reserva.html">Reserva</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Modal de éxito -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">¡Mensaje Enviado!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo en breve.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="row">
+                <!-- Redes sociales -->
+                <div class="col-md-4">
+                    <h5>Redes sociales</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-white d-flex align-items-center">
+                                <img src="images/facebook.jpg" alt="Facebook" class="me-2" style="width: 24px; height: 24px;"> Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white d-flex align-items-center">
+                                <img src="images/youtube.jpg" alt="YouTube" class="me-2" style="width: 24px; height: 24px;"> YouTube
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white d-flex align-items-center">
+                                <img src="images/instagram.jpg" alt="Instagram" class="me-2" style="width: 24px; height: 24px;"> Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Quiénes somos -->
+                <div class="col-md-4">
+                    <h5>Quiénes somos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Sostenibilidad</a></li>
+                        <li><a href="#" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Contacto -->
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">jr. lima </a></li>
+                        <li><a href="tel:+51965451526" class="text-white">+51 965451526</a></li>
+                        <li><a href="mailto:aventurasperu@.com" class="text-white">aventurasperu@reserva.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Función para manejar el envío del formulario
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Evitar el envío del formulario de manera tradicional
+
+            // Aquí podrías agregar código para enviar los datos del formulario a un servidor
+            // Si el envío es exitoso, mostramos el modal de éxito
+
+            // Mostrar el modal
+            var myModal = new bootstrap.Modal(document.getElementById('successModal'));
+            myModal.show();
+        });
+    </script>
+</body>
+</html>

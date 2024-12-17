@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventuras Perú - Destinos</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Estilo para el menú desplegable */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #6ce61c;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 10px;
+            color: #000;
+            text-decoration: none;
+        }
+        .dropdown-menu a:hover {
+            background-color: #121213;
+        }
+        
+        .cuadro-verde {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .cuadro-verde:hover {
+            background-color: #218838;
+        }
+        .contenido-itinerario {
+            display: none;
+        }
+        /* Estilo para el texto inspirador */
+        .inspirador {
+            background-color: #135088;
+            padding: 50px;
+            text-align: center;
+            font-size: 1.8rem;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .inspirador p {
+            margin: 0;
+        }
+        /* Estilo para el video */
+        .video-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .video-container iframe {
+            width: 100%;
+            max-width: 960px;
+            height: 540px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Aventuras Perú</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="destinosDropdown" role="button">Destinos</a>
+                        <div class="dropdown-menu">
+                            <a href="cusco.html">Cusco</a>
+                            <a href="machupicchu.html">Machu Picchu</a>
+                            <a href="arequipa.html">Arequipa</a>
+                            <a href="lima.html">Lima</a>
+                            <a href="amazonia.html">Amazonía</a>
+                            <a href="nazca.html">Líneas de Nazca</a>
+                            <a href="puno.html">Puno</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="reserva.html">Reserva</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Texto inspirador -->
+    <section class="inspirador">
+        <p>"¡Explora lo desconocido! Perú te espera con su belleza única y paisajes que te robarán el aliento. La aventura está a un clic de distancia. ¡Viaja y vive la experiencia!"</p>
+    </section>
+
+    <!-- Video de YouTube (con autoplay) -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/9bh3oETXpO0?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="row">
+                <!-- Redes sociales -->
+                <div class="col-md-4">
+                    <h5>Redes sociales</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white d-flex align-items-center"><img src="images/facebook.jpg" alt="Facebook" class="me-2" style="width: 24px; height: 24px;"> Facebook</a></li>
+                        <li><a href="#" class="text-white d-flex align-items-center"><img src="images/youtube.jpg" alt="YouTube" class="me-2" style="width: 24px; height: 24px;"> YouTube</a></li>
+                        <li><a href="#" class="text-white d-flex align-items-center"><img src="images/instagram.jpg" alt="Instagram" class="me-2" style="width: 24px; height: 24px;"> Instagram</a></li>
+                    </ul>
+                </div>
+                <!-- Quiénes somos -->
+                <div class="col-md-4">
+                    <h5>Quiénes somos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Sostenibilidad</a></li>
+                        <li><a href="#" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Contacto -->
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">jr. lima </a></li>
+                        <li><a href="tel:+51965451526" class="text-white">+51 965451526</a></li>
+                        <li><a href="mailto:aventurasperu@.com" class="text-white">aventurasperu@reserva.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
